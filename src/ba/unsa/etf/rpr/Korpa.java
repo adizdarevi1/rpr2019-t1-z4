@@ -12,7 +12,7 @@ public class Korpa {
         }
         return false;
     }
-    public Artikl izbaciArtiklSaKodom(String kod) {//da li je dodavanje uspjesno? : dodaj, vrati u supermarket
+    public Artikl izbaciArtiklSaKodom(String kod) {//da li je izbacivanje uspjesno? : dodaj, vrati u supermarket
         for (int i = 0; i < brojArtikalaUKorpi; i++) {
             if(artikli[i].getKod().equals(kod)){
                 Artikl izbacen = new Artikl(
@@ -27,7 +27,7 @@ public class Korpa {
                 return izbacen;
             }
         }
-        return null; //nije pronadjen takav artikl
+        return null;
     }
     public int dajUkupnuCijenuArtikala(){
         int cijena = 0;
